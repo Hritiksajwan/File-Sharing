@@ -184,7 +184,7 @@ export default function ClientSelector() {
   useEffect(() => {
     if (connectionRef.current) return;
 
-    const webSocket = new WebSocket("ws://192.168.100.106:5173/ws");
+    const webSocket = new WebSocket("ws://localhost:5173/ws");
     connectionRef.current = {
       webSocket,
       peerConnection: null,
